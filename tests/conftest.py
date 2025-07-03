@@ -1,8 +1,8 @@
 import os
 import pytest
 
+
 def pytest_exception_interact(node, call, report):
-    # Only take screenshot if the test failed
     if report.failed:
         page = node.funcargs.get("browser_page", None)
         if page:
