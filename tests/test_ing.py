@@ -13,7 +13,7 @@ def browser_page(request):
 
         browser.close()
 
-def test_ing_analytic_cookies_acceptance(browser_page):
+def test_ing_analytic_cookies(browser_page):
 
     page = browser_page
 # 1. Wejdź na stronę ing.pl
