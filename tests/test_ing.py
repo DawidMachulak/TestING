@@ -24,7 +24,7 @@ def test_ing_analytic_cookies(browser_page):
         page.goto("https://www.ing.pl/", wait_until="networkidle")
         page.wait_for_selector(".cookie-policy-content")
 
-        # 2. W menu wyboru ciasteczek wybierz "Dostosuj"
+    # 2. W menu wyboru ciasteczek wybierz "Dostosuj"
         page.get_by_role("button", name="Dostosuj").click()
 
     except Exception as e:
